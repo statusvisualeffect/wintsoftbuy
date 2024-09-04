@@ -1,0 +1,185 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #002800;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 20px;
+    background: #004d00;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    color: #00ff00;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+    background: linear-gradient(135deg, #004d00, #00ff00);
+    min-height: 100vh;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #00ff00;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #ccffcc;
+}
+
+.hero a {
+    display: inline-block;
+    background-color: #00ff00;
+    border: none;
+    padding: 20px 40px;
+    font-size: 1.8rem;
+    color: #001f00;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero a:hover {
+    background-color: #00cc00;
+    transform: scale(1.05);
+}
+
+.image-wrapper {
+    width: 50%;
+    max-width: 700px;
+    overflow: hidden;
+    border-radius: 20px;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.hero-image {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.image-wrapper:hover {
+    transform: scale(1.1);
+}
+
+.image-wrapper:hover .hero-image {
+    transform: scale(1.2);
+}
+
+/* Секция с функциями */
+.features {
+    text-align: center;
+    padding: 80px 100px;
+    background: #002800;
+}
+
+.features h2 {
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+    color: #00ff00;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.feature-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.feature-item h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #00ff00;
+}
+
+.feature-item p {
+    font-size: 1.2rem;
+    color: #ccffcc;
+}
+
+/* Секция со скроллом */
+.scroll-section {
+    padding: 80px 100px;
+    background: #003300;
+    text-align: center;
+}
+
+.scroll-section h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #00ff00;
+}
+
+.scroll-content {
+    display: flex;
+    overflow-x: scroll;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.scroll-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    min-width: 300px;
+    transition: transform 0.3s;
+}
+
+.scroll-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.scroll-item:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    padding: 30px;
+    background: #004d00;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    color: #00ff00;
+    font-size: 1.2rem;
+}
